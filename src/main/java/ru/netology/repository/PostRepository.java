@@ -9,7 +9,6 @@ import java.util.Optional;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicLong;
 
-@Repository
 public class PostRepository {
   private final List<Post> posts = new CopyOnWriteArrayList<>();
   private final AtomicLong nextPostId = new AtomicLong(1L);
